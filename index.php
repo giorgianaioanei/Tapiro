@@ -25,7 +25,7 @@
 			<p id="footer">@diritti riservati al Gruppo 2</p>
 		</div>
 	<?php }else if(!isset($_SESSION['Email'])&&isset($_COOKIE['splash'])){ ?>
-		<div class="splash">
+		<div class="splash Ssplash">
 			<img src="img/Alieno.png" id="alien" class="Salien">
 			<img src="img/logo_login.svg" id="logo" class="Slogo">
 			<div id="text" class="Stext">
