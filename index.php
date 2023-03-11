@@ -14,7 +14,7 @@
 	<?php if(!isset($_SESSION['Email'])&&!isset($_COOKIE['splash'])){ ?>
 		<div class="splash">
 			<img src="img/Alieno.png" id="alien">
-			<img src="img/logo login.svg" id="logo">
+			<img src="img/logo_login.svg" id="logo">
 			<div id="text">
 				<p class="title">Hey, benvenuto nella pagina test del log-in!</p>
 				<p class="subTitle">Tu sai accedere ai sitiweb senza intoppi?<br>Mettiti alla prova.</p>
@@ -27,7 +27,7 @@
 	<?php }else if(!isset($_SESSION['Email'])&&isset($_COOKIE['splash'])){ ?>
 		<div class="splash">
 			<img src="img/Alieno.png" id="alien" class="Salien">
-			<img src="img/logo login.svg" id="logo" class="Slogo">
+			<img src="img/logo_login.svg" id="logo" class="Slogo">
 			<div id="text" class="Stext">
 				<p class="title">Hey, benvenuto nella pagina test del log-in!</p>
 				<p class="subTitle">Tu sai accedere ai sitiweb senza intoppi?<br>Mettiti alla prova.</p>
