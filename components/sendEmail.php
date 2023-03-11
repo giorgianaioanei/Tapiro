@@ -9,26 +9,7 @@ $mail_oggetto = "Reset Password!";
 
 // definisco il messaggio formattato in HTML
 $idCode = $_SESSION["ID"];
-$mail_corpo = <<<HTML
-<html>
-<head>
-  <title>Reset Password</title>
-</head>
-<body>
-
-    <center>
-        <h1>Reset Password</h1>
-        <h5>
-            É stato richiesto un cambio password per questa email, se non sei stato a richiederlo ignora l'email<br>
-            Altrimenti clicca sul link:
-        </h5>
-        <a href="https://alealila.altervista.org/changePasw.php?email=$email&id=$idCode">RESET PASSWORD</a>
-        <br><br><br><br><br><br>
-    </center>  
-
-</body>
-</html>
-HTML;
+require "components/email.php";
 
 // aggiusto un po' le intestazioni della mail
 // E' in questa sezione che deve essere definito il mittente (From)

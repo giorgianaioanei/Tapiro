@@ -1,11 +1,4 @@
-<?php
-	session_start();
-	/*if(!isset($_SESSION['Email']) && !isset($_COOKIE['logid'])){
-		header("Location: login.php");
-	}else if(!isset($_SESSION['Email']) && isset($_COOKIE['logid'])){
-		header("Location: login.php?C");
-	}*/
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="it">
 <head>

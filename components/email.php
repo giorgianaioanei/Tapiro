@@ -1,3 +1,5 @@
+<?php
+$mail_corpo = <<<HTML
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0"><head>
 <meta charset="UTF-8">
@@ -82,10 +84,10 @@ border-color:#e5e5e5 #e5e5e5 #e5e5e5 #e5e5e5!important;
 <td valign="top" align="center" style="padding:0;Margin:0;width:560px">
 <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-position:left top" width="100%" cellspacing="0" cellpadding="0" role="presentation">
 <tbody><tr style="border-collapse:collapse">
-<td align="center" style="padding:0;Margin:0;padding-top:5px;padding-bottom:5px;font-size:0px"><img src="https://raw.githubusercontent.com/Al3xPaladino/Tapiro/master/img/Alieno.png?token=GHSAT0AAAAAAB4ZUCCKZDHN6SSNMRMZ63OIZALG4FA" alt="" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="175"></td>
+<td align="center" style="padding:0;Margin:0;padding-top:5px;padding-bottom:5px;font-size:0px"><img src="img/Alieno.png" alt="" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="175"></td>
 </tr>
 <tr style="border-collapse:collapse">
-<td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://ghspei.stripocdn.email/content/guids/videoImgGuid/images/14121555765613223_6NI.png" alt="" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="199"></td>
+<td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="img/logo login.svg" alt="" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="199"></td>
 </tr>
 <tr style="border-collapse:collapse">
 <td align="center" style="padding:20px;Margin:0;font-size:0">
@@ -102,7 +104,7 @@ border-color:#e5e5e5 #e5e5e5 #e5e5e5 #e5e5e5!important;
 <td align="center" style="padding:0;Margin:0;padding-top:10px;padding-left:40px;padding-right:40px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#666666;font-size:16px">Nessun problema! Clicca sul pulsante in basso <br>per impostare una nuova password.</p></td>
 </tr>
 <tr style="border-collapse:collapse">
-<td align="center" style="Margin:0;padding-left:10px;padding-right:10px;padding-top:40px;padding-bottom:40px"><span class="es-button-border-1678446686849 es-button-border" style="border-style:solid;border-color:#ffffff;background:#1f97ff;border-width:2px;display:inline-block;border-radius:30px;width:auto"><a href="https://alealila.altervista.org/" class="es-button es-button-1678446644108" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#ffffff;font-size:18px;display:inline-block;background:#1f97ff;border-radius:30px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-weight:bold;font-style:normal;line-height:22px;width:auto;text-align:center;padding:15px 20px 15px 20px;border-color:#1f97ff">RESET PASSWORD</a></span></td>
+<td align="center" style="Margin:0;padding-left:10px;padding-right:10px;padding-top:40px;padding-bottom:40px"><span class="es-button-border-1678446686849 es-button-border" style="border-style:solid;border-color:#ffffff;background:#1f97ff;border-width:2px;display:inline-block;border-radius:30px;width:auto"><a <?php echo "href='https://alealila.altervista.org/changePasw.php?email=$email&id=$idCode'" ?> class="es-button es-button-1678446644108" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#ffffff;font-size:18px;display:inline-block;background:#1f97ff;border-radius:30px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-weight:bold;font-style:normal;line-height:22px;width:auto;text-align:center;padding:15px 20px 15px 20px;border-color:#1f97ff">RESET PASSWORD</a></span></td>
 </tr>
 <tr style="border-collapse:collapse">
 <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:21px;color:#666666;font-size:14px">Se non hai richiesto tu il reset della password,<br>ignora questa mail e non saranno effettuate modifiche al tuo account.</p></td>
@@ -140,3 +142,4 @@ border-color:#e5e5e5 #e5e5e5 #e5e5e5 #e5e5e5!important;
 </div>
 
 </body></html>
+HTML;
