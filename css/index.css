@@ -22,7 +22,7 @@
 }
 .Salien{
 	top: 0vh!important;
-	width: 150px!important;
+	width: 180px!important;
 }
 #logo{
 	position: absolute;
@@ -101,6 +101,12 @@
 
 /*********** TABLET *************/
 @media (max-width: 768px){
+	#alien{
+		width: 170px;
+	}
+	.Salien{
+		width: 170px!important;
+	}
 	#text{
 		left: 50%;
 		transform: translateX(-50%);
@@ -139,6 +145,10 @@
 @media (max-width: 425px){
 	#alien{
 		margin-top: 2em;
+		width: 150px;
+	}
+	.Salien{
+		width: 150px!important;
 	}
 	#logo{
 		width: 240px;
