@@ -4,6 +4,10 @@
 			setcookie('logid', '', -1, "/");
 			unset($_COOKIE['logid']);
 		}
+		if(isset($_COOKIE['splash'])){
+			setcookie('splash', '', -1, "/");
+			unset($_COOKIE['splash']);
+		}
 
 		session_start();
 		$_SESSION = array();

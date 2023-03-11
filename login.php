@@ -34,7 +34,7 @@
 	</form>
 	<a href="richiestaPasw.php" rel="noopener noreferrer">password dimenticata</a>
 	<br>
-	<span>Non sei ancora registrato? <a href="signin.php" rel="noopener noreferrer">Registrati</a>.</span>
+	<span>Non sei ancora registrato? <a href="signup.php" rel="noopener noreferrer">Registrati</a>.</span>
 
 	<?php //include 'components/footer.php'; ?>
 

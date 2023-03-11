@@ -15,7 +15,7 @@ if(isset($_POST['firstname'])&&isset($_POST['lastname'])&&isset($_POST['email'])
 	if (strlen($email)!=0 && strlen($password)!=0 && filter_var($email, FILTER_VALIDATE_EMAIL)){
 		if($password!=$confirm){
 			$_SESSION['erro'] = "Password non uguale!";
-			header("Location: signin.php");
+			header("Location: signup.php");
 		} else{
 			include "components/connection.php";
 			$connection = new mysqli($hostData, $userData, $paswData, $database);
@@ -34,11 +34,11 @@ if(isset($_POST['firstname'])&&isset($_POST['lastname'])&&isset($_POST['email'])
 				}
 				else{
 					$_SESSION['erro'] = "Email/Password non validi!";
-					header("Location: signin.php");
+					header("Location: signup.php");
 				}
 			}catch(Exception $e){
 				$_SESSION['erro'] = "Errore inserimento utente!";
-				header("Location: signin.php");
+				header("Location: signup.php");
 			}
 		}
 		$sql->close();
@@ -46,7 +46,7 @@ if(isset($_POST['firstname'])&&isset($_POST['lastname'])&&isset($_POST['email'])
 		$connection->close();
 	} else{
 		$_SESSION['erro'] = "Email/Password non validi !";
-		header("Location: signin.php");
+		header("Location: signup.php");
 	}
 
 } else{

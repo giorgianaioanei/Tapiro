@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <title>Sign in</title>
+  <title>Sign up</title>
   <?php // require 'components/header.php'; ?>
   <?php session_start(); require 'secure/notForLog.php'; ?>
   <!--<link rel="stylesheet" type="text/css" href="css/form.css">-->
@@ -9,10 +9,10 @@
 </head>
 <body>
 	  
-	<?php// $menu="SignIn"; require 'components/menu.php'; ?>
+	<?php// $menu="SignUp"; require 'components/menu.php'; ?>
 
-	<h1>Sign in</h1>
-	<form name="signinForm" id="signinForm" onsubmit="return validateForm()" action="mod_signin.php" method="post">
+	<h1>Sign up</h1>
+	<form name="signupForm" id="signupForm" onsubmit="return validateForm()" action="mod_signup.php" method="post">
 		<span <?php if(isset($_SESSION['erro'])){
 	          			echo "style='color:#cc0000'";//echo "class='erro'";
 	          		}

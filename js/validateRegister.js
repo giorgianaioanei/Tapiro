@@ -1,11 +1,11 @@
 function validateForm() {
 
   let res   = document.getElementById('res');
-  let nome  = document.forms["signinForm"]["firstname"].value;
-  let cogno = document.forms["signinForm"]["lastname"].value;
-  let email = document.forms["signinForm"]["email"].value;
-  let passw = document.forms["signinForm"]["pass"].value;
-  let confi = document.forms["signinForm"]["confirm"].value;
+  let nome  = document.forms["signupForm"]["firstname"].value;
+  let cogno = document.forms["signupForm"]["lastname"].value;
+  let email = document.forms["signupForm"]["email"].value;
+  let passw = document.forms["signupForm"]["pass"].value;
+  let confi = document.forms["signupForm"]["confirm"].value;
   let filter;
 
   const validStr = (str) => str ? true : false
@@ -23,7 +23,7 @@ function validateForm() {
       !validStr(confi) || confi.length<1) {
     res.setAttribute("class", "erro");
     res.innerText = "Campi registrazione errati!";
-    document.forms["signinForm"].reset();
+    document.forms["signupForm"].reset();
     setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
     return false;
   }
