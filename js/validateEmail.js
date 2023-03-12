@@ -1,6 +1,6 @@
-function validateForm() {
-  let res   = document.getElementById('res');
-  let email = document.forms["richiestaForm"]["email"].value;
+function validateEmail() {
+  let res   = document.getElementById('resE');
+  let email = document.forms["richiestaEmail"]["email"].value;
 
   const validStr = (str) => str ? true : false
   email = email.trim();
@@ -9,8 +9,8 @@ function validateForm() {
   if (!validStr(email) || email.length<1) {
     res.setAttribute("class", "erro");
     res.innerText = "Email non valida!";
-    document.forms["richiestaForm"].reset();
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    document.forms["richiestaEmail"].reset();
+    setTimeout(function(){ document.getElementById('resE').removeAttribute("class") }, 5000);
     return false;
   }
 
@@ -19,8 +19,8 @@ function validateForm() {
   if (!filter.test(email)) {
     res.setAttribute("class", "erro");
     res.innerText = "Email non valida!";
-    document.forms["richiestaForm"].reset();
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    document.forms["richiestaEmail"].reset();
+    setTimeout(function(){ document.getElementById('resE').removeAttribute("class") }, 5000);
     return false;
   }
   /*+++++++++++++++++++++++++++++++++++++++++++++++*/

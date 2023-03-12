@@ -108,6 +108,202 @@
 	opacity: 1!important;
 }
 
+/*********** LOGOUT *************/
+.logo{
+  width: 120px!important;
+  margin: 30px 0 0 30px;
+}
+.text1{
+    text-align: center;
+    color: #5C5C5C;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+.p1{
+    font-weight: 600;
+    font-size: 45px;
+}
+.p2{
+    font-weight: 500;
+    font-size: 22px;
+}
+.tapiro{
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 500px;
+    background: transparent url('img/Tapiro.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    align-items: center;
+}
+.text2{
+    text-align: center;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    color: #5C5C5C;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+    font-size: 19.5px;
+}
+.bottone{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+	width: 150px;
+	height: 45px;
+	background: #1F97FF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 10px #00000029;
+	border-radius: 37px;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	letter-spacing: 0.84px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+#foot{
+  margin-top: 50px!important;
+  text-align: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #343434;
+}
+@media (max-width: 500px){
+	.logo{
+	  display: block;
+  	  width: 110px!important;
+	  margin-top: 30px;
+	  margin-left: auto !important;
+	  margin-right: auto !important;
+	}
+	.text1{
+		margin-top: 50px;
+	}
+	.p1{
+	    font-weight: 600;
+	    font-size: 30px;
+	}
+	.p2{
+	    font-weight: 500;
+	    font-size: 18px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.text2{
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.tapiro{
+	    width: 320px;
+	}
+}
+
+/*********** POPUP ************/
+#popup{
+	backdrop-filter: blur(8px);
+}
+.mostro{
+	display: block;
+  	width: 250px!important;
+	padding-top: 30px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+/* Extra styles for the cancel button */
+.btnNo {
+	background: #A53328 0% 0% no-repeat padding-box;
+	box-shadow: inset 0px 3px 6px #00000029;
+	border-radius: 0px 0px 41px 0px;
+}
+.btnSi {
+  	background: #4bb543 0% 0% no-repeat padding-box;
+	box-shadow: inset 0px 3px 6px #00000029;
+	border-radius: 0px 0px 0px 41px;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.btnNo, .btnSi {
+  float: left;
+  width: 50%;
+  bottom: 0px;
+  border: none;
+  margin-bottom: 0px;
+  padding: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+
+.btnNo:hover{
+	background: #cc0000 0% 0% no-repeat padding-box;
+}
+.btnSi:hover {
+  	background: #58BF38 0% 0% no-repeat padding-box;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d55;
+  padding-top: 420px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	display: block;
+  	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 20px #00000029;
+	border-radius: 41px;
+  	margin: auto; /* 5% from the top, 15% from the bottom and centered */
+  	width: 600px; /* Could be more or less, depending on screen size */
+  	z-index: 2;
+  	transform: translateY(-50%);
+}
+
+.clearfix{
+  margin-top: 30px!important;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media (max-width: 650px){
+	.modal{
+		padding-top: 200px;
+	}
+	.modal-content {
+		width: 90%;
+  		transform: translateY(0%);
+	}
+	.mostro{
+	  	width: 200px!important;
+	}
+}
+@media (max-width: 500px){
+	.modal{
+		padding-top: 100px;
+	}
+}
+
+
 /*********** TABLET *************/
 @media (max-width: 768px){
 	#alien{

@@ -89,8 +89,6 @@
   z-index: 10;
   margin-top: 11px;
   margin-left: -75px;
-  /*margin-top: -51px;
-  margin-left: 540px;*/
   cursor: pointer;
 }
 #footerLogin{
@@ -194,6 +192,14 @@ input[type="checkbox"]:checked::before {
   font-size: 14px;
   display: none;
 }
+#resE{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  display: none;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
 .succ{
   color: #58BF38;
   display: block!important;
@@ -203,7 +209,111 @@ input[type="checkbox"]:checked::before {
   display: block!important;
 }
 
+/*********** POPUP ************/
+#popup{
+  backdrop-filter: blur(8px);
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d55;
+  padding-top: 420px;
+}
 
+/* Modal Content/Box */
+.modal-content {
+  display: block;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000029;
+  border-radius: 41px;
+  padding: 50px;
+  margin: auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 400px; /* Could be more or less, depending on screen size */
+  z-index: 2;
+  transform: translateY(-50%);
+}
+.popClose{
+  position: absolute;
+  top: -20px;
+  right: 41px!important;
+  border-radius: 50%;
+  padding: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000029;
+  width: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #707070;
+  cursor: pointer;
+}
+.popEmail{
+  padding-right: 20px!important;
+  margin-top: 40px;
+  width: 80%!important;
+}
+.popButton{
+  margin: auto;
+  width: 150px;
+  height: 45px;
+  background: #1F97FF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #00000029;
+  border-radius: 37px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.84px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.titlePop{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #5C5C5C;
+}
+
+@media (max-width: 650px){
+  .modal{
+    padding-top: 200px;
+  }
+  .modal-content {
+    width: 90%;
+    padding: 50px 0 50px 0;
+    transform: translateY(0%);
+  }
+  .popEmail{
+    width:70%!important;
+  }
+}
+@media (max-width: 500px){
+  .modal{
+    padding-top: 100px;
+  }
+  .modal-content {
+    padding: 50px 0 40px 0;
+  }
+  .titlePop{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .popEmail{
+    width:80%!important;
+  }
+}
 
 /*********** TABLET *************/
 @media (max-width: 980px){
@@ -226,6 +336,13 @@ input[type="checkbox"]:checked::before {
   }
   .box-form form input[type=email], .box-form form input[type=password], .box-form form input[type=text] {
     width: 220px;
+  }
+  #footerLogin a{
+    margin-left: 10px!important;
+    float: none;
+  }
+  #footerLogin a{
+    font-size: 12px!important;
   }
 }
 

@@ -50,4 +50,8 @@ if(getCookie("splash") == ""){  // Verification if splash's cookie isset
   setTimeout(function(){ document.getElementById("alien").classList.add("Salien") }, 4000); // for the correct responsive of the images
   gsap.to(".splash", {overflow: 'auto', delay: '4'});
   setTimeout(setCookie("splash", true), 4000); // set the cookie for evitation the loop of splash screen
+  setTimeout(function(){ document.getElementById("alien").src = "img/Alieno.gif";document.getElementById("alien").style = "padding-left:20px!important;width: 210px!important;"; }, 4500);
+  setTimeout(function(){ document.getElementById("alien").src = "img/Alieno.png";document.getElementById("alien").style = ""; }, 6000);
+}else{
+  setTimeout(function(){ document.getElementById("alien").src = "img/Alieno.png";document.getElementById("alien").style = ""; }, 1500);
 }

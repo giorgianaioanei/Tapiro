@@ -27,9 +27,9 @@ if(mail($mail_destinatario, $mail_oggetto, $mail_corpo, $mail_headers)){
     $_SESSION = array();
     session_destroy();
     session_start();
-    $_SESSION['erro'] = "Email inviata!";
-    header("Location: login.php");
+    $_SESSION['erroL'] = "Email per recupero password inviata!";
+    header("Location: form.php#login");
 }else{
-    $_SESSION['erro'] = "Errore nell'invio dell'Email!";
-    header("Location: richiestaPasw.php");
+    $_SESSION['erroE'] = "Errore nell'invio dell'Email!";
+    header("Location: form.php#register");
 }

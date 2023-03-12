@@ -23,15 +23,15 @@ if(isset($_POST['email'])){
 
 			require 'components/sendEmail.php';
 		} else{
-			$_SESSION['erro'] = "Email non valida!";
-			header("Location: richiestaPasw.php");
+			$_SESSION['erroE'] = "Email non esistente!";
+			header("Location: form.php#email");
 		}
 		$sql->close();
 		$result->free();
 		$connection->close();
 	} else{
-		$_SESSION['erro'] = "Email non valida!";
-		header("Location: richiestaPasw.php");
+		$_SESSION['erroE'] = "Email non valida!";
+		header("Location: form.php#email");
 	}
 } else{
 	header("Location: logout.php?out");
