@@ -38,7 +38,7 @@
 	  <div id="login" class="form-action show">
 	    
 	    <form name="loginForm" id="loginForm" onsubmit="return validateLogin()" action="mod_login.php" method="post">
-				<span <?php if(isset($_SESSION['erroL']) && ($_SESSION['erroL'] == "Registrazione effettuata!" || $_SESSION['erroL'] == "Email inviata!" || $_SESSION['erroL'] == "Password resettata!")){
+				<span <?php if(isset($_SESSION['erroL']) && ($_SESSION['erroL'] == "Registrazione effettuata!" || $_SESSION['erroL'] == "Email per recupero password inviata!" || $_SESSION['erroL'] == "Password resettata!")){
 		          			echo "class='succ'";
 		          		} else if(isset($_SESSION['erroL'])){
 		          			echo "class='erro'";

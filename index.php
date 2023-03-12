@@ -28,7 +28,7 @@
 		</div>
 	<?php }else if(!isset($_SESSION['Email'])&&isset($_COOKIE['splash'])){ ?>
 		<div class="splash Ssplash">
-			<img draggable="false" src="img/Alieno.gif" id="alien" class="Salien" style="padding-left:20px!important;width: 210px!important;">
+			<img draggable="false" src="img/Alieno.png" id="alien" class="Salien" style="">
 			<img draggable="false" src="img/logo_login.svg" id="logo" class="Slogo">
 			<div id="text" class="Stext">
 				<p class="title">Hey, benvenuto nella pagina test del log-in!</p>
@@ -48,7 +48,7 @@
 		<img draggable="false" class="tapiro" src="img/Tapiro.gif" alt="tapiro">
 		<p class="text2">Sai anche uscire senza problemi?</p>
 		<button class="bottone" onclick="document.getElementById('popup').style.display='block';">ESCI</button>
-		<!-- ----------------------------------- -->
+		<!-- ------------- POPUP -------------- -->
 		<div id="popup" class="modal">
 		    <div class="modal-content">
 		      <img draggable="false" src="img/AlienoRosso.png" alt="Alieno rosso" class="mostro">
