@@ -1,5 +1,5 @@
 function validateLogin() {
-  let res   = document.getElementById('res');
+  let res   = document.getElementById('resL');
   let email = document.forms["loginForm"]["email"].value;
   let passw = document.forms["loginForm"]["pass"].value;
 
@@ -12,7 +12,7 @@ function validateLogin() {
     res.setAttribute("class", "erro");
     res.innerText = "Attenzione! Inserire i dati richiesti.";
     document.forms["loginForm"].reset();
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    setTimeout(function(){ document.getElementById('resL').removeAttribute("class") }, 5000);
     return false;
   }
 
@@ -21,7 +21,7 @@ function validateLogin() {
   if (!filter.test(email)) {
     res.setAttribute("class", "erro");
     res.innerText = "Email non valida!";
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    setTimeout(function(){ document.getElementById('resL').removeAttribute("class") }, 5000);
     return false;
   }
   /*+++++++++++++++++++++++++++++++++++++++++++++++*/

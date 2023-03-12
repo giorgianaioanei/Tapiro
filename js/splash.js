@@ -36,15 +36,15 @@ if(getCookie("splash") == ""){  // Verification if splash's cookie isset
   if(screen.width <= 425){ // if screen is a phone
     gsap.to("#alien", {delay: '1.5', top: '0vh', duration: '1', ease: 'cubic-bezier(0.215,0.610,0.355,1)', width: '150px'});
     gsap.to("#logo",  {opacity: '1', delay: '2.6', duration: '1', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
-    gsap.to("#text",  {display: 'block', top: '370px', delay: '3.6', duration: '0.7', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
+    gsap.to("#text",  {display: 'block', top: '400px', delay: '3.6', duration: '0.7', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
   }else if(screen.width > 425 && screen.width <= 768){ // if screen is a tablet
     gsap.to("#alien", {delay: '1.5', top: '0vh', duration: '1', ease: 'cubic-bezier(0.215,0.610,0.355,1)', width: '170px'});
     gsap.to("#logo",  {opacity: '1', delay: '2.6', duration: '1', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
-    gsap.to("#text",  {display: 'block', top: '370px', delay: '3.6', duration: '0.7', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
+    gsap.to("#text",  {display: 'block', top: '400px', delay: '3.6', duration: '0.7', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
   }else{ // if a screen is a 
     gsap.to("#alien", {delay: '1.5', top: '0vh', duration: '1', ease: 'cubic-bezier(0.215,0.610,0.355,1)', width: '180px'});
     gsap.to("#logo",  {opacity: '1', delay: '2.6', duration: '1', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
-    gsap.to("#text",  {display: 'block', top: '370px', delay: '3.6', duration: '0.7', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
+    gsap.to("#text",  {display: 'block', top: '400px', delay: '3.6', duration: '0.7', ease: 'cubic-bezier(0.215,0.610,0.355,1)'});
   }
   gsap.to("#footer", {opacity: '1', delay: '4'});
   setTimeout(function(){ document.getElementById("alien").classList.add("Salien") }, 4000); // for the correct responsive of the images

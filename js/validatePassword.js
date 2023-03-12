@@ -1,6 +1,6 @@
 function validateForm() {
 
-  let res   = document.getElementById('res');
+  let res   = document.getElementById('resP');
   let passw = document.forms["resetForm"]["pass"].value;
   let confi = document.forms["resetForm"]["confirm"].value;
   let filter;
@@ -13,8 +13,8 @@ function validateForm() {
   if (!validStr(passw) || passw.length<1 ||
       !validStr(confi) || confi.length<1) {
     res.setAttribute("class", "erro");
-    res.innerText = "Password non valide!";
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    res.innerText = "Password non valideJ!";
+    setTimeout(function(){ document.getElementById('resP').removeAttribute("class") }, 5000);
     return false;
   }
   /*+++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -22,8 +22,8 @@ function validateForm() {
   /*+++++++++++ VERIFICA Password ++++++++++++++++++++*/
   if (passw != confi) {
     res.setAttribute("class", "erro");
-    res.innerText = "Password non uguali!";
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    res.innerText = "Password non ugualiJ!";
+    setTimeout(function(){ document.getElementById('resP').removeAttribute("class") }, 5000);
     return false;
   }
   /*+++++++++++++++++++++++++++++++++++++++++++++++*/

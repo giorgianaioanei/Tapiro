@@ -10,8 +10,8 @@ if(isset($_POST['email'])&&isset($_POST['id'])&&isset($_POST['pass'])&&isset($_P
 
 	if (strlen($email)!=0 && $id!=0 && strlen($password)!=0 && strlen($confirm)!=0 && filter_var($email, FILTER_VALIDATE_EMAIL)){
 		if($password!=$confirm){
-			$_SESSION['erro'] = "Password non uguali!";
-			header("Location: changePasw.php");
+			$_SESSION['erroP'] = "Password non uguali!";
+			header("Location: newPassword.php");
 		} else{
 			require "components/connection.php";
 			$connection = new mysqli($hostData, $userData, $paswData, $database);
@@ -31,25 +31,25 @@ if(isset($_POST['email'])&&isset($_POST['id'])&&isset($_POST['pass'])&&isset($_P
 				$sql->bind_param('sss', $passwordHash, $id, $email);
 
 				if($sql->execute()){
-					$_SESSION['erro'] = "Password resettata!";
-					header("Location: login.php");					
+					$_SESSION['erroL'] = "Password resettata!";
+					header("Location: form.php#login");					
 				} else{
-					$_SESSION['erro'] = "Errore reset Password!";
-					header("Location: changePasw.php");
+					$_SESSION['erroL'] = "Errore reset Password!";
+					header("Location: form.php#login");
 				}
 			} else{
-				$_SESSION['erro'] = "Errore reset Password!";
-				header("Location: login.php");	
+				$_SESSION['erroL'] = "Errore reset Password!";
+				header("Location: form.php#login");	
 			}
 			$sql->close();
 			$result->free();
 			$connection->close();
 		}
 	} else{
-		$_SESSION['erro'] = "Password non valide!";
-		header("Location: changePasw.php");
+		$_SESSION['erroL'] = "Errore reset Password!";
+		header("Location: form.php#login");
 	}
 } else{
-	$_SESSION['erro'] = "Password non valide!";
+	$_SESSION['erroP'] = "Password non valide!";
 	header("Location: logout.php?out");
 }

@@ -53,7 +53,7 @@
 }
 .Stext{
 	display: block!important;
-	top: 370px!important;
+	top: 400px!important;
 }
 #text p.title{
 	font-family: 'Montserrat', sans-serif;
@@ -70,6 +70,7 @@
 }
 .logOsign{
 	margin-top: 3em;
+	margin-bottom: 60px;
 }
 .logOsign button{
 	width: 246px;
@@ -94,15 +95,17 @@
 	color: #5C5C5C;
 }
 #footer{
-	position: absolute;
-	top: 680px!important;
-	left: 50%;
-	transform: translateX(-50%);
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	color: #343434;
-	opacity: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  font: normal normal 400 14px/18px Montserrat;
+  letter-spacing: 0px;
+  color: #343434;
+  opacity: 0;
+  padding-bottom: 36px;
 }
 .Sfooter{
 	opacity: 1!important;
@@ -210,21 +213,26 @@
 }
 .mostro{
 	display: block;
-  	width: 250px!important;
-	padding-top: 30px;
+  	width: 200px!important;
+	padding-top: 60px;
 	margin-left: auto !important;
 	margin-right: auto !important;
+}
+.popText{
+	margin-top: 20px;
 }
 /* Extra styles for the cancel button */
 .btnNo {
 	background: #A53328 0% 0% no-repeat padding-box;
 	box-shadow: inset 0px 3px 6px #00000029;
 	border-radius: 0px 0px 41px 0px;
+	padding: 27px 45px 26px 52px;
 }
 .btnSi {
   	background: #4bb543 0% 0% no-repeat padding-box;
 	box-shadow: inset 0px 3px 6px #00000029;
 	border-radius: 0px 0px 0px 41px;
+	padding: 27px 52px 26px 45px;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -234,7 +242,6 @@
   bottom: 0px;
   border: none;
   margin-bottom: 0px;
-  padding: 20px;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -251,7 +258,7 @@
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
+  display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -270,13 +277,13 @@
 	box-shadow: 0px 0px 20px #00000029;
 	border-radius: 41px;
   	margin: auto; /* 5% from the top, 15% from the bottom and centered */
-  	width: 600px; /* Could be more or less, depending on screen size */
+  	width: 463px; /* Could be more or less, depending on screen size */
   	z-index: 2;
   	transform: translateY(-50%);
 }
 
 .clearfix{
-  margin-top: 30px!important;
+  margin-top: 60px!important;
 }
 
 /* Clear floats */
@@ -304,6 +311,7 @@
 }
 
 
+
 /*********** TABLET *************/
 @media (max-width: 768px){
 	#alien{
@@ -316,6 +324,9 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 90%;
+	}
+	.Stext{
+		top: 370px!important;
 	}
 	#text p.title{
 		font-size: 21px;
@@ -334,8 +345,8 @@
 		font-size: 23px;
 	}
 	.logOsign span{
-		margin-left: 15px;
-		margin-right: 15px;
+		margin-left: 12px;
+		margin-right: 12px;
 		font-size: 20px;
 	}
 	#footer{
@@ -373,7 +384,7 @@
 		font-size: 15px;
 	}
 	.logOsign{
-		margin-top: 2em;
+		margin-top: 3em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -384,8 +395,8 @@
 		font-size: 23px;
 	}
 	.logOsign span{
-		margin-top: 15px;
-		margin-bottom: 15px;
+		margin-top: 12px;
+		margin-bottom: 12px;
 		font-size: 20px;
 	}
 	#footer{

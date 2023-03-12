@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home</title>
+	<title>Tapiro</title>
 	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 	<META HTTP-EQUIV="Expires" CONTENT="-1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,8 @@
 <body>
 	<?php if(!isset($_SESSION['Email'])&&!isset($_COOKIE['splash'])){ ?>
 		<div class="splash">
-			<img draggable="false" src="img/Alieno.png" id="alien">
-			<img draggable="false" src="img/logo_login.svg" id="logo">
+			<img loading="lazy" draggable="false" src="img/Alieno.png" id="alien">
+			<img loading="lazy" draggable="false" src="img/logo_login.svg" id="logo">
 			<div id="text">
 				<p class="title">Hey, benvenuto nella pagina test del log-in!</p>
 				<p class="subTitle">Tu sai accedere ai sitiweb senza intoppi?<br>Mettiti alla prova.</p>
@@ -28,8 +28,8 @@
 		</div>
 	<?php }else if(!isset($_SESSION['Email'])&&isset($_COOKIE['splash'])){ ?>
 		<div class="splash Ssplash">
-			<img draggable="false" src="img/Alieno.png" id="alien" class="Salien" style="">
-			<img draggable="false" src="img/logo_login.svg" id="logo" class="Slogo">
+			<img loading="lazy" draggable="false" src="img/Alieno.png" id="alien" class="Salien" style="">
+			<img loading="lazy" draggable="false" src="img/logo_login.svg" id="logo" class="Slogo">
 			<div id="text" class="Stext">
 				<p class="title">Hey, benvenuto nella pagina test del log-in!</p>
 				<p class="subTitle">Tu sai accedere ai sitiweb senza intoppi?<br>Mettiti alla prova.</p>
@@ -40,19 +40,19 @@
 			<p id="footer" class="Sfooter">@diritti riservati al Gruppo 2</p>
 		</div>
 	<?php }else{ ?>
-		<img draggable="false" class="logo" src="img/logo_login.svg" alt="logo login">
+		<img loading="lazy" draggable="false" class="logo" src="img/logo_login.svg" alt="logo login">
 		<div class="text1">
 			<p class="p1">Complimenti!</p>
 			<p class="p2">Sei in grado di accedere ad un sito</p>
 		</div>
-		<img draggable="false" class="tapiro" src="img/Tapiro.gif" alt="tapiro">
+		<img loading="lazy" draggable="false" class="tapiro" src="img/Tapiro.gif" alt="tapiro">
 		<p class="text2">Sai anche uscire senza problemi?</p>
 		<button class="bottone" onclick="document.getElementById('popup').style.display='block';">ESCI</button>
 		<!-- ------------- POPUP -------------- -->
 		<div id="popup" class="modal">
 		    <div class="modal-content">
-		      <img draggable="false" src="img/AlienoRosso.png" alt="Alieno rosso" class="mostro">
-		      <p class="text2">Sei sicuro di voler uscire?</p>
+		      <img loading="lazy" draggable="false" src="img/AlienoRosso.png" alt="Alieno rosso" class="mostro">
+		      <p class="text2 popText">Sei sicuro di voler uscire?</p>
 		      <div class="clearfix">
 		        <button onclick="window.location.replace('logout.php?out')" class="btnSi">SI</button>
 		        <button onclick="document.getElementById('popup').style.display='none'" class="btnNo">NO</button>

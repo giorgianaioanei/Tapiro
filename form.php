@@ -17,7 +17,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-	<img draggable="false" onclick="window.location.href='index.php'" src="img/logo_login.svg" class="logo">
+	<img loading="lazy" draggable="false" onclick="window.location.href='index.php'" src="img/logo_login.svg" class="logo">
 	  
 	<div class="box-form">
 
@@ -56,7 +56,7 @@
 				<div id="footerLogin">
 					<input type="checkbox" id="savePasw" name="savePasw" value="savePassword"> <label for="savePasw"> Ricordami</label>
 
-					<a onclick="document.getElementById('popup').style.display='block';" rel="noopener noreferrer">Password dimenticata?</a>
+					<a onclick="document.getElementById('popup').style.display='block';" rel="noopener noreferrer" class="dimenticata">Password dimenticata?</a>
 					<br>
 					<input type="submit" name="submit" value="ACCEDI" class="button" rel="noopener noreferrer">
 				</div>
