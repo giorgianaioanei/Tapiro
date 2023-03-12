@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <title>Login</title>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
   <?php session_start(); require 'secure/notForLog.php'; ?>
   <link rel="stylesheet" type="text/css" href="css/form.css">
   <script src="js/validateLogin.js"></script>
