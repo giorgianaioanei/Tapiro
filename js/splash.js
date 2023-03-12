@@ -24,10 +24,10 @@ function getCookie(cname) {
 }
 
 function toLogin(){
-  window.location.href = "login.php";
+  window.location.href = "form.php#login";
 }
 function toSignup(){
-  window.location.href = "signup.php";
+  window.location.href = "form.php#register";
 }
 /* Start of splash screen with library GSAP for the animation */
 if(getCookie("splash") == ""){  // Verification if splash's cookie isset

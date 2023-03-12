@@ -14,8 +14,8 @@ if(isset($_POST['firstname'])&&isset($_POST['lastname'])&&isset($_POST['email'])
 
 	if (strlen($email)!=0 && strlen($password)!=0 && filter_var($email, FILTER_VALIDATE_EMAIL)){
 		if($password!=$confirm){
-			$_SESSION['erro'] = "Password non uguale!";
-			header("Location: signup.php");
+			$_SESSION['erroR'] = "Password non uguale!";
+			header("Location: form.php#register");
 		} else{
 			include "components/connection.php";
 			$connection = new mysqli($hostData, $userData, $paswData, $database);
@@ -29,24 +29,24 @@ if(isset($_POST['firstname'])&&isset($_POST['lastname'])&&isset($_POST['email'])
 			try{
 				$respo = $sql->execute();
 				if($respo == 1){
-					$_SESSION['erro'] = "Registrazione effettuata!";
-					header("Location: login.php");
+					$_SESSION['erroL'] = "Registrazione effettuata!";
+					header("Location: form.php#login");
 				}
 				else{
-					$_SESSION['erro'] = "Email/Password non validi!";
-					header("Location: signup.php");
+					$_SESSION['erroR'] = "L’email o la password sono sbagliati.";
+					header("Location: form.php#register");
 				}
 			}catch(Exception $e){
-				$_SESSION['erro'] = "Errore inserimento utente!";
-				header("Location: signup.php");
+				$_SESSION['erroR'] = "Errore inserimento utente!";
+				header("Location: form.php#register");
 			}
 		}
 		$sql->close();
 		$result->free();
 		$connection->close();
 	} else{
-		$_SESSION['erro'] = "Email/Password non validi !";
-		header("Location: signup.php");
+		$_SESSION['erroR'] = "L’email o la password sono sbagliati.";
+		header("Location: form.php#register");
 	}
 
 } else{

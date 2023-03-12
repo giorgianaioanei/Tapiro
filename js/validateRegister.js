@@ -1,4 +1,4 @@
-function validateForm() {
+function validateRegister() {
 
   let res   = document.getElementById('res');
   let nome  = document.forms["signupForm"]["firstname"].value;

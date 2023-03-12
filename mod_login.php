@@ -58,35 +58,35 @@ if((isset($_GET['C']) && isset($_COOKIE['logid'])) || (isset($_POST['email']) &&
 						if(setcookie('logid', json_encode($cookieData), $endTime, "/")){
 							header("Location: index.php");
 						} else{
-							$_SESSION['erro'] = "Errore nell'accesso!";
-							header("Location: login.php");
+							$_SESSION['erroL'] = "Qualcosa è andato storto!";
+							header("Location: form.php#login");
 						}					
 					} else{
-						$_SESSION['erro'] = "Errore, accesso non disponibile!";
-						header("Location: login.php");
+						$_SESSION['erroL'] = "Qualcosa è andato storto!";
+						header("Location: form.php#login");
 					}
 				}else{
 					header("Location: index.php");
 				}
 
 			} else{
-				$_SESSION['erro'] = "Email/Password non validi!";
-				header("Location: login.php");
+				$_SESSION['erroL'] = "L’email o la password sono sbagliati.";
+				header("Location: form.php#login");
 			}
 		} else{
 			if(isset($logid) && isset($expiry)){
 				header("Location: logout.php?out");
 			}else{
-				$_SESSION['erro'] = "Email/Password non validi!";
-				header("Location: login.php");
+				$_SESSION['erroL'] = "L’email o la password sono sbagliati.";
+				header("Location: form.php#login");
 			}
 		}
 		$sql->close();
 		$result->free();
 		$connection->close();
 	} else{
-		$_SESSION['erro'] = "Email/Password non validi!";
-		header("Location: login.php");
+		$_SESSION['erroL'] = "Attenzione! Inserire i dati richiesti.";
+		header("Location: form.php#login");
 	}
 } else{
 	header("Location: logout.php?out");

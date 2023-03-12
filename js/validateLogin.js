@@ -1,4 +1,4 @@
-function validateForm() {
+function validateLogin() {
   let res   = document.getElementById('res');
   let email = document.forms["loginForm"]["email"].value;
   let passw = document.forms["loginForm"]["pass"].value;
@@ -10,7 +10,7 @@ function validateForm() {
   /*Verifica campi vuoti, nulli o indefiniti*/
   if (!validStr(email) || email.length<1 || !validStr(passw) || passw.length<1) {
     res.setAttribute("class", "erro");
-    res.innerText = "Email/Password non validi!";
+    res.innerText = "Attenzione! Inserire i dati richiesti.";
     document.forms["loginForm"].reset();
     setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
     return false;
