@@ -116,7 +116,7 @@
 					<br><br>
 					<input type="checkbox" id="dati" name="dati" required> <label for="dati"> Autorizzo il trattamento dei dati</label>
 					<br>
-					<input type="submit" name="submit" value="ACCEDI" class="button" rel="noopener noreferrer">
+					<input type="submit" name="submit" value="REGISTRATI" class="button reg" rel="noopener noreferrer">
 				</div>
 				
 			</form>
