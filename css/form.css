@@ -149,6 +149,7 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
+
 #footerLogin label{
   color: #707070CC;
   font-family: 'Montserrat', sans-serif;
@@ -214,6 +215,7 @@ input[type="checkbox"]:checked::before {
 	cursor: pointer;
 	opacity: 1;
 }
+
 
 #footerLogin .reg{
   width: 170px;
