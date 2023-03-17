@@ -86,6 +86,38 @@
 	color: #FFFFFF;
 	cursor: pointer;
 }
+.logOsign:hover button:hover{
+	width: 246px;
+	height: 74px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 10px #00000029;
+	border-radius: 37px;
+	border:1px solid #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 28px;
+	letter-spacing: 0.84px;
+	color: #1F97FF;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.logOsign:active button:active{
+	width: 246px;
+	height: 74px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 10px #00000029;
+	border-radius: 37px;
+	border: 6px solid #1F97FF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 28px;
+	letter-spacing: 0.84px;
+	color: #1F97FF;
+	cursor: pointer;
+	opacity: 1;
+}
+
 .logOsign span{
 	margin-left: 32px;
 	margin-right: 32px;
