@@ -62,12 +62,20 @@
   padding: 50px;
 }
 .box-form a {
-  color: #1F97FF;
   text-decoration: none;
+  font: italic normal normal 18px/22px Montserrat;
+  letter-spacing: 0px;
+  color: #1F97FF;
+  opacity: 1;
 }
 .box-form a:hover {
   text-decoration: underline;
 }
+.box-form a:hover {
+  text-decoration: underline;
+  font: normal normal bold 18px/22px Montserrat;
+}
+
 .box-form form input[type=email], .box-form form input[type=password], .box-form form input[type=text] {
   width: 360px;
   height: 40px;
@@ -89,12 +97,16 @@
   position: absolute;
   width: fit-content;
   color: #1F97FF;
-  text-decoration: underline;
-  font: normal normal bold 14px/15px Montserrat;
+  
+  font: normal normal  14px/15px Montserrat;
   z-index: 10;
   margin-top: 11px;
   margin-left: -75px;
   cursor: pointer;
+}
+.mostra:hover{
+  text-decoration: underline;
+  font: normal normal bold 14px/15px Montserrat;
 }
 #footerLogin{
   margin: auto;
@@ -171,7 +183,7 @@ input[type="checkbox"]:checked::before {
   margin-top: 30px;
 }
 
-.logOsign:hover button:hover{
+#footerLogin:hover .button:hover{
 	width: 246px;
 	height: 74px;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -187,7 +199,7 @@ input[type="checkbox"]:checked::before {
 	opacity: 1;
 }
 
-.logOsign:active button:active{
+#footerLogin:active .button:active{
 	width: 246px; 
 	height: 74px;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -203,12 +215,6 @@ input[type="checkbox"]:checked::before {
 	opacity: 1;
 }
 
-a{
-	font: italic normal normal 18px/22px Montserrat;
-	letter-spacing: 0px;
-	color: #1F97FF;
-	opacity: 1;
-}
 #footerLogin .reg{
   width: 170px;
 }

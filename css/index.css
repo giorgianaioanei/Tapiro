@@ -103,7 +103,7 @@
 }
 
 .logOsign:active button:active{
-	width: 246px;
+	width: 246px; 
 	height: 74px;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	box-shadow: 0px 3px 10px #00000029;
@@ -117,6 +117,8 @@
 	cursor: pointer;
 	opacity: 1;
 }
+
+
 
 .logOsign span{
 	margin-left: 32px;
